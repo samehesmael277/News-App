@@ -39,11 +39,6 @@ class NewsVM @Inject constructor(
                 is Resource.Error -> {
                     "getNewsFromApi Error: ${result.message}".toLogE()
                     getLocalNews()
-//                    state = state.copy(
-//                        newsData = null,
-//                        isLoading = false,
-//                        error = result.message
-//                    )
                 }
             }
         }
